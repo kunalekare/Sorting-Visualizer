@@ -4,14 +4,8 @@ An interactive, web-based tool designed to help users visualize and understand t
 
 ---
 
-### [**▶️ View Live Demo**](https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPOSITORY_NAME/)
+### [**▶️ View Live Demo**](https://sorting-visualizer-mu-six.vercel.app/)
 
-*(Replace the link above with your actual GitHub Pages URL after deployment.)*
-
----
-
-![Sorting Visualizer Screenshot](https://placehold.co/800x450/1e293b/94a3b8?text=Sorting+Visualizer+UI)
-*(**Action Required:** Replace the placeholder image above. Take a screenshot of your running application and add it to your repository, then update the link.)*
 
 ## Features
 
