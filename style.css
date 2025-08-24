@@ -1,0 +1,81 @@
+/* Custom styles for the visualizer */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.bar {
+    transition: height 0.2s ease, background-color 0.2s ease;
+    position: relative;
+}
+
+.bar-value {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #e2e8f0; /* slate-200 */
+    width: 24px;
+    text-align: center;
+    transition: color 0.2s ease;
+}
+
+.bar-label {
+    position: absolute;
+    bottom: calc(100% + 20px); /* Position above the number */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: #facc15; /* yellow-400 */
+    background-color: rgba(23, 37, 84, 0.7); /* Dark blue with transparency */
+    padding: 2px 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+
+/* State Colors */
+.bar-default { background-color: #60a5fa; /* blue-400 */ }
+.bar-comparing { background-color: #f87171; /* red-400 */ }
+.bar-swapping { background-color: #4ade80; /* green-400 */ }
+.bar-sorted { background-color: #a78bfa; /* violet-400 */ }
+.bar-pivot { background-color: #facc15; /* yellow-400 */ }
+
+/* Custom styling for range slider thumb */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 20px; 
+    height: 20px;
+    background: #3b82f6; /* blue-500 */
+    cursor: pointer; 
+    border-radius: 50%;
+    margin-top: -6px;
+}
+input[type=range]::-moz-range-thumb {
+    width: 20px; 
+    height: 20px;
+    background: #3b82f6; /* blue-500 */
+    cursor: pointer; 
+    border-radius: 50%;
+}
+
+/* Custom styling for select dropdown */
+select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+    -webkit-print-color-adjust: exact;
+}
+
+#explanation-box {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
